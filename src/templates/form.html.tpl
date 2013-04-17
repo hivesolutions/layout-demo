@@ -7,14 +7,14 @@
             <label>Name</label>
         </div>
         <div class="input">
-            <input class="text-field focus" name="name" placeholder="eg: John Doe" value="{{ form.name }}"
+            <input name="name" class="text-field focus" placeholder="eg: John Doe" value="{{ form.name }}"
                    data-error="{{ errors.name }}" />
         </div>
         <div class="label">
             <label>Place</label>
         </div>
         <div class="input">
-            <div class="drop-field">
+            <div name="place" class="drop-field">
                 <div class="data-source" data-type="countries"></div>
             </div>
         </div>
@@ -22,7 +22,7 @@
             <label>Country</label>
         </div>
         <div class="input">
-            <div class="drop-field drop-field-select">
+            <div name="country" class="drop-field drop-field-select">
                 <div class="data-source" data-type="countries"></div>
             </div>
         </div>
@@ -30,11 +30,11 @@
             <label>Description</label>
         </div>
         <div class="input">
-            <textarea class="text-area" name="description" placeholder="eg: some words about the form"
+            <textarea name="description" class="text-area" placeholder="eg: some words about the form"
                       data-error="{{ errors.description }}">{{ form.description }}</textarea>
         </div>
         <table class="table table-edit">
-            <input name="sub_product[inventory_lines][]" type="hidden" class="table-empty-field" />
+            <input name="prices[]" type="hidden" class="table-empty-field" />
             <thead>
                 <tr>
                     <th class="longer-input" data-width="382">Country</th>
@@ -45,15 +45,15 @@
             <tbody>
                 <tr class="template">
                     <td>
-                        <div class="drop-field drop-field-select">
+                        <div name="prices[][country]" class="drop-field drop-field-select">
                             <div class="data-source" data-type="countries"></div>
                         </div>
                     </td>
                     <td>
-                        <input type="text" class="text-field text-right" data-type="floatp" value="1" />
+                        <input type="text" name="prices[][quantity]" class="text-field text-right" data-type="floatp" value="1" />
                     </td>
                     <td>
-                        <input type="text" class="text-field text-right" data-type="floatp" data-decimal_places="2" />
+                        <input type="text" name="prices[][price]" class="text-field text-right" data-type="floatp" data-decimal_places="2" />
                     </td>
                 </tr>
             </tbody>
