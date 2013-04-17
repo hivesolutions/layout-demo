@@ -14,7 +14,7 @@
             <label>Place</label>
         </div>
         <div class="input">
-            <div name="place" class="drop-field">
+            <div name="place" class="drop-field" data-error="{{ errors.place }}">
                 <div class="data-source" data-type="countries"></div>
             </div>
         </div>
@@ -22,7 +22,7 @@
             <label>Country</label>
         </div>
         <div class="input">
-            <div name="country" class="drop-field drop-field-select">
+            <div name="country" class="drop-field drop-field-select" data-error="{{ errors.country }}">
                 <div class="data-source" data-type="countries"></div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <textarea name="description" class="text-area" placeholder="eg: some words about the form"
                       data-error="{{ errors.description }}">{{ form.description }}</textarea>
         </div>
-        <table class="table table-edit">
+        <table class="table table-edit" data-error="{{ errors.prices }}">
             <input name="prices[]" type="hidden" class="table-empty-field" />
             <thead>
                 <tr>

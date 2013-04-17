@@ -63,7 +63,13 @@ def form_action():
         "form.html.tpl",
         link = "form",
         form = {},
-        errors = {}
+        errors = {
+            "name" : ["Invalid name"],
+            "place" : ["Invalid place"],
+            "country" : ["Invalid country"],
+            "description" : ["Invalid description"],
+            "prices" : ["Invalid prices"]
+        }
     )
 
 @app.route("/about", methods = ("GET",))
