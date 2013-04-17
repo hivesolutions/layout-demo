@@ -24,6 +24,12 @@
                     <a href="{{ url_for('form') }}">form</a>
                 {% endif %}
                 //
+                {% if link == "list" %}
+                    <a href="{{ url_for('list') }}" class="active">list</a>
+                {% else %}
+                    <a href="{{ url_for('list') }}">list</a>
+                {% endif %}
+                //
                 {% if link == "about" %}
                     <a href="{{ url_for('about') }}" class="active">about</a>
                 {% else %}

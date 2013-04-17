@@ -37,8 +37,11 @@ __copyright__ = "Copyright (c) 2008-2012 Hive Solutions Lda."
 __license__ = "GNU General Public License (GPL), Version 3"
 """ The license for the module """
 
+import json
+
 from layout_demo import app
 from layout_demo import flask
+from layout_demo import quorum
 
 @app.route("/", methods = ("GET",))
 @app.route("/index", methods = ("GET",))
@@ -46,6 +49,13 @@ def index():
     return flask.render_template(
         "index.html.tpl",
         link = "home"
+    )
+
+@app.route("/show", methods = ("GET",))
+def show():
+    return flask.render_template(
+        "show.html.tpl",
+        link = "show"
     )
 
 @app.route("/form", methods = ("GET",))
@@ -70,6 +80,29 @@ def form_action():
             "description" : ["Invalid description"],
             "prices" : ["Invalid prices"]
         }
+    )
+
+@app.route("/list", methods = ("GET",))
+def list():
+    return flask.render_template(
+        "list.html.tpl",
+        link = "list"
+    )
+
+@app.route("/list.json", methods = ("GET",))
+def list_json():
+    number_records = int(quorum.get_field("number_records"))
+
+    items = []
+    for index in range(number_records):
+        items.append({
+            "name" : "Name %d" % index,
+            "country" : "Country %d" % index
+        })
+
+    return flask.Response(
+        json.dumps(items),
+        mimetype = "application/json"
     )
 
 @app.route("/about", methods = ("GET",))
