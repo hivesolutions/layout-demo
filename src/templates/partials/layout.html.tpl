@@ -18,6 +18,12 @@
                     <a href="{{ url_for('index') }}">home</a>
                 {% endif %}
                 //
+                {% if link == "form" %}
+                    <a href="{{ url_for('form') }}" class="active">form</a>
+                {% else %}
+                    <a href="{{ url_for('form') }}">form</a>
+                {% endif %}
+                //
                 {% if link == "about" %}
                     <a href="{{ url_for('about') }}" class="active">about</a>
                 {% else %}

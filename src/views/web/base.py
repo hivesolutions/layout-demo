@@ -48,6 +48,24 @@ def index():
         link = "home"
     )
 
+@app.route("/form", methods = ("GET",))
+def form():
+    return flask.render_template(
+        "form.html.tpl",
+        link = "form",
+        form = {},
+        errors = {}
+    )
+
+@app.route("/form", methods = ("POST",))
+def form_action():
+    return flask.render_template(
+        "form.html.tpl",
+        link = "form",
+        form = {},
+        errors = {}
+    )
+
 @app.route("/about", methods = ("GET",))
 def about():
     return flask.render_template(
