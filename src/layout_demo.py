@@ -36,3 +36,22 @@ __copyright__ = "Copyright (c) 2008-2012 Hive Solutions Lda."
 
 __license__ = "GNU General Public License (GPL), Version 3"
 """ The license for the module """
+
+import flask #@UnusedImport
+
+import quorum
+
+SECRET_KEY = "kyjbqt4828ky8fdl7ifwgawt60erk8wg"
+""" The "secret" key to be at the internal encryption
+processes handled by flask (eg: sessions) """
+
+app = quorum.load(
+    name = __name__,
+    secret_key = SECRET_KEY,
+    logger = "layout_demo.debug"
+)
+
+from views import * #@UnusedWildImport
+
+if __name__ == "__main__":
+    quorum.run(server = "waitress")

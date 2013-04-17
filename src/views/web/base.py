@@ -39,11 +39,18 @@ __license__ = "GNU General Public License (GPL), Version 3"
 
 from layout_demo import app
 from layout_demo import flask
-from layout_demo import quorum
 
-@app.route("/home", methods = ("GET",))
-def home():
+@app.route("/", methods = ("GET",))
+@app.route("/index", methods = ("GET",))
+def index():
     return flask.render_template(
-        "site/index.html.tpl",
+        "index.html.tpl",
         link = "home"
+    )
+
+@app.route("/about", methods = ("GET",))
+def about():
+    return flask.render_template(
+        "about.html.tpl",
+        link = "about"
     )
