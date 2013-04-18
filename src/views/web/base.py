@@ -108,6 +108,13 @@ def list_json():
         mimetype = "application/json"
     )
 
+@app.route("/random", methods = ("GET",))
+def random():
+    return flask.render_template(
+        "random.html.tpl",
+        link = "random"
+    )
+
 @app.route("/about", methods = ("GET",))
 def about():
     return flask.render_template(
