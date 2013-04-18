@@ -75,6 +75,7 @@ def form_action():
         form = {},
         errors = {
             "name" : ["Invalid name"],
+            "birthday" : ["Invalid birthday"],
             "place" : ["Invalid place"],
             "country" : ["Invalid country"],
             "description" : ["Invalid description"],
@@ -91,13 +92,15 @@ def list():
 
 @app.route("/list.json", methods = ("GET",))
 def list_json():
+    start_record = int(quorum.get_field("start_record"))
     number_records = int(quorum.get_field("number_records"))
 
     items = []
     for index in range(number_records):
+        index_f = start_record + index + 1
         items.append({
-            "name" : "Name %d" % index,
-            "country" : "Country %d" % index
+            "name" : "Name %d" % index_f,
+            "country" : "Country %d" % index_f
         })
 
     return flask.Response(
