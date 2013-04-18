@@ -34,6 +34,35 @@
             </div>
         </div>
         <div class="label">
+            <label>Gender</label>
+        </div>
+        <div class="input">
+            <input type="radio" name="gender" id="male" value="male" checked="1" />
+            <label class="radio-label" for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" />
+            <label class="radio-label" for="female">Female</label>
+        </div>
+        <div class="label">
+            <label>Questions</label>
+        </div>
+        <div class="input">
+            <div class="option">
+                <span class="float-left">Do you have a private car for yourself ?</span>
+                <input class="float-right" type="checkbox" name="car" checked="1" />
+                <div class="clear"></div>
+            </div>
+            <div class="option">
+                <span class="float-left">Do you have a motocycle for yourself ?</span>
+                <input class="float-right" type="checkbox" name="car" />
+                <div class="clear"></div>
+            </div>
+            <div class="option">
+                <span class="float-left">Born In Passadena ?</span>
+                <input class="float-right" type="checkbox" name="car" />
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="label">
             <label>Description</label>
         </div>
         <div class="input">
