@@ -7,7 +7,7 @@
     {% endblock %}
 </head>
 <body class="ux wait-load">
-    <div id="overlay"></div>
+    <div id="overlay" class="overlay"></div>
     <div id="header">
         {% block header %}
             <h1>{% block name %}{% endblock %}</h1>
@@ -34,6 +34,12 @@
                     <a href="{{ url_for('list') }}" class="active">list</a>
                 {% else %}
                     <a href="{{ url_for('list') }}">list</a>
+                {% endif %}
+                //
+                {% if link == "list" %}
+                    <a href="{{ url_for('random') }}" class="active">random</a>
+                {% else %}
+                    <a href="{{ url_for('random') }}">random</a>
                 {% endif %}
                 //
                 {% if link == "about" %}
