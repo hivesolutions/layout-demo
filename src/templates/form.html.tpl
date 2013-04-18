@@ -11,6 +11,13 @@
                    data-error="{{ errors.name }}" />
         </div>
         <div class="label">
+            <label>Birthday</label>
+        </div>
+        <div class="input">
+            <input name="birthday" type="text" class="text-field" data-type="date"
+                   placeholder="yyyy/mm/dd" value="{{ form.birthday }}" data-error="{{ errors.birthday }}" />
+        </div>
+        <div class="label">
             <label>Place</label>
         </div>
         <div class="input">
