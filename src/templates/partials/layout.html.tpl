@@ -36,7 +36,7 @@
                     <a href="{{ url_for('list') }}">list</a>
                 {% endif %}
                 //
-                {% if link == "list" %}
+                {% if link == "random" %}
                     <a href="{{ url_for('random') }}" class="active">random</a>
                 {% else %}
                     <a href="{{ url_for('random') }}">random</a>
