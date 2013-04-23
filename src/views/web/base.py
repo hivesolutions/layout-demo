@@ -37,11 +37,14 @@ __copyright__ = "Copyright (c) 2008-2012 Hive Solutions Lda."
 __license__ = "GNU General Public License (GPL), Version 3"
 """ The license for the module """
 
+import time
 import json
 
 from layout_demo import app
 from layout_demo import flask
 from layout_demo import quorum
+
+SLEEP_TIME = 3
 
 @app.route("/", methods = ("GET",))
 @app.route("/index", methods = ("GET",))
@@ -94,6 +97,7 @@ def list():
 def list_json():
     start_record = int(quorum.get_field("start_record"))
     number_records = int(quorum.get_field("number_records"))
+    if start_record > 0: time.sleep(SLEEP_TIME)
 
     items = []
     for index in range(number_records):
