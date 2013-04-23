@@ -30,16 +30,10 @@
                     <a href="{{ url_for('form') }}">form</a>
                 {% endif %}
                 //
-                {% if link == "list" %}
-                    <a href="{{ url_for('list') }}" class="active">list</a>
+                {% if link == "options" %}
+                    <a href="{{ url_for('options') }}" class="active">options</a>
                 {% else %}
-                    <a href="{{ url_for('list') }}">list</a>
-                {% endif %}
-                //
-                {% if link == "random" %}
-                    <a href="{{ url_for('random') }}" class="active">random</a>
-                {% else %}
-                    <a href="{{ url_for('random') }}">random</a>
+                    <a href="{{ url_for('options') }}">options</a>
                 {% endif %}
                 //
                 {% if link == "about" %}
@@ -47,6 +41,28 @@
                 {% else %}
                     <a href="{{ url_for('about') }}">about</a>
                 {% endif %}
+                //
+                <div class="links-extra">
+                    <ul>
+                        <li>
+                            {% if link == "list" %}
+                                <a href="{{ url_for('list') }}" class="active">list</a>
+                            {% else %}
+                                <a href="{{ url_for('list') }}">list</a>
+                            {% endif %}
+                        </li>
+                        <li>
+                            {% if link == "random" %}
+                                <a href="{{ url_for('random') }}" class="active">random</a>
+                            {% else %}
+                                <a href="{{ url_for('random') }}">random</a>
+                            {% endif %}
+                        </li>
+                    </ul>
+                </div>
+                <a class="link link-more">
+                    <span>more</span>
+                </a>
             </div>
         {% endblock %}
     </div>
