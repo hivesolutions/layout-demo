@@ -4,7 +4,7 @@
     {% if session.theme == 'Default' %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.css') }}" />
     {% elif session.theme == 'Modern' %}
-        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout_modern.css') }}" />
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.modern.css') }}" />
     {% endif %}
 {% else %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.css') }}" />
