@@ -7,16 +7,11 @@
             <label>Theme</label>
         </div>
         <div class="input">
-            <div name="theme" class="drop-field drop-field-select" data-error="{{ errors.country }}">
+            <div name="theme" class="drop-field drop-field-select" value="{{ session.theme }}"
+                 data-error="{{ errors.theme }}">
                 <ul class="data-source" data-type="local">
-                    <li>
-                        <span name="name">Default</span>
-                        <span name="id">layout.css</span>
-                    </li>
-                    <li>
-                        <span name="name">Modern</span>
-                        <span name="id">layout_modern.css</span>
-                    </li>
+                    <li>Default</li>
+                    <li>Modern</li>
                 </ul>
             </div>
         </div>

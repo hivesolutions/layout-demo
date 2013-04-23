@@ -119,6 +119,29 @@ def random():
         link = "random"
     )
 
+@app.route("/options", methods = ("GET",))
+def options():
+    return flask.render_template(
+        "options.html.tpl",
+        link = "options",
+        form = {},
+        errors = {}
+    )
+
+@app.route("/options", methods = ("POST",))
+def options_action():
+    theme = quorum.get_field("theme")
+
+    flask.session["theme"] = theme
+    flask.session.permanent = True
+
+    return flask.render_template(
+        "options.html.tpl",
+        link = "options",
+        form = {},
+        errors = {}
+    )
+
 @app.route("/about", methods = ("GET",))
 def about():
     return flask.render_template(
