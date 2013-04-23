@@ -52,7 +52,7 @@
                 <div class="clear"></div>
             </div>
             <div class="option">
-                <span class="float-left">Do you have a motocycle for yourself ?</span>
+                <span class="float-left">What about a motocycle for a run ?</span>
                 <input class="float-right" type="checkbox" name="car" />
                 <div class="clear"></div>
             </div>
