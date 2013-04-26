@@ -38,7 +38,6 @@ __license__ = "GNU General Public License (GPL), Version 3"
 """ The license for the module """
 
 import time
-import json
 
 from layout_demo import app
 from layout_demo import flask
@@ -93,7 +92,7 @@ def list():
         link = "list"
     )
 
-@app.route("/list.json", methods = ("GET",))
+@app.route("/list.json", methods = ("GET",), json = True)
 def list_json():
     start_record = int(quorum.get_field("start_record"))
     number_records = int(quorum.get_field("number_records"))
@@ -107,10 +106,7 @@ def list_json():
             "country" : "Country %d" % index_f
         })
 
-    return flask.Response(
-        json.dumps(items),
-        mimetype = "application/json"
-    )
+    return items
 
 @app.route("/random", methods = ("GET",))
 def random():
