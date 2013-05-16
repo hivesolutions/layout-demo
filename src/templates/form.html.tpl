@@ -42,24 +42,26 @@
             <input type="radio" name="gender" id="female" value="female" />
             <label class="radio-label" for="female">Female</label>
         </div>
-        <div class="label">
-            <label>Questions</label>
-        </div>
-        <div class="input">
-            <div class="option">
-                <span class="float-left">Do you have a private car for yourself ?</span>
-                <input class="float-right" type="checkbox" name="car" checked="1" />
-                <div class="clear"></div>
+        <div class="panel-more" data-more="more" data-less="less">
+            <div class="label">
+                <label>Questions</label>
             </div>
-            <div class="option">
-                <span class="float-left">What about a motocycle for a run ?</span>
-                <input class="float-right" type="checkbox" name="car" />
-                <div class="clear"></div>
-            </div>
-            <div class="option">
-                <span class="float-left">Born In Passadena ?</span>
-                <input class="float-right" type="checkbox" name="car" />
-                <div class="clear"></div>
+            <div class="input">
+                <div class="option">
+                    <span class="float-left">Do you have a private car for yourself ?</span>
+                    <input class="float-right" type="checkbox" name="car" checked="1" />
+                    <div class="clear"></div>
+                </div>
+                <div class="option">
+                    <span class="float-left">What about a motocycle for a run ?</span>
+                    <input class="float-right" type="checkbox" name="car" />
+                    <div class="clear"></div>
+                </div>
+                <div class="option">
+                    <span class="float-left">Born In Passadena ?</span>
+                    <input class="float-right" type="checkbox" name="car" />
+                    <div class="clear"></div>
+                </div>
             </div>
         </div>
         <div class="label">
