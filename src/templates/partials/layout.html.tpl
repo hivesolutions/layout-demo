@@ -41,7 +41,6 @@
                 {% else %}
                     <a href="{{ url_for('about') }}">about</a>
                 {% endif %}
-                //
                 <div class="links-extra">
                     <ul>
                         <li>
@@ -60,9 +59,10 @@
                         </li>
                     </ul>
                 </div>
-                <a class="link link-more">
-                    <span>more</span>
-                </a>
+                <span class="link-more">
+                	//
+                    <a class="link">more</a>
+                </span>
             </div>
         {% endblock %}
     </div>
