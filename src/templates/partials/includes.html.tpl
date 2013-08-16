@@ -9,7 +9,7 @@
 {% else %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.css') }}" />
 {% endif %}
-<link rel="stylesheet" href="{{ url_for('static', filename = 'css/layout.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/layout.css') }}" />
 
 <!-- favicon inclusion -->
 <link rel="shortcut icon" href="{{ url_for('static', filename = 'images/favicon.ico') }}" />
