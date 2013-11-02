@@ -7,11 +7,12 @@
             <label>Theme</label>
         </div>
         <div class="input">
-            <div name="theme" class="drop-field drop-field-select" value="{{ session.theme }}"
+            <div name="theme" class="drop-field drop-field-select" value="{{ session.label }}"
                  data-error="{{ errors.theme }}">
                 <ul class="data-source" data-type="local">
                     <li>Default</li>
-                    <li>Modern</li>
+                    <li>Modern - Default</li>
+                    <li>Modern - Romantic</li>
                 </ul>
             </div>
         </div>

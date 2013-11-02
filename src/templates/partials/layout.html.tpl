@@ -6,7 +6,7 @@
         <title>Layout / {% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
-<body class="ux wait-load">
+<body class="ux wait-load {{ session.style }}" >
     <div id="overlay" class="overlay"></div>
     <div id="header">
         {% block header %}

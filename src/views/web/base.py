@@ -127,8 +127,20 @@ def options():
 @app.route("/options", methods = ("POST",))
 def options_action():
     theme = quorum.get_field("theme")
+    theme_s = theme.split("-", 1)
+    theme_l = len(theme_s)
 
-    flask.session["theme"] = theme
+    if theme_l == 1: theme_s.append("")
+    theme_s, style_s = theme_s
+
+    theme_s = theme_s.lower().strip()
+    style_s = style_s.lower().strip()
+
+    if style_s == "default": style_s = ""
+
+    flask.session["label"] = theme
+    flask.session["theme"] = theme_s
+    flask.session["style"] = style_s
     flask.session.permanent = True
 
     return flask.render_template(

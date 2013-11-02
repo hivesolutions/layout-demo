@@ -1,9 +1,9 @@
 <!-- css inclusion -->
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/uxf/css/ux-min.css') }}" />
 {% if session.theme %}
-    {% if session.theme == 'Default' %}
+    {% if session.theme == 'default' %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.css') }}" />
-    {% elif session.theme == 'Modern' %}
+    {% elif session.theme == 'modern' %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.modern.css') }}" />
     {% endif %}
 {% else %}
