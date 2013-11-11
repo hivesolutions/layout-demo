@@ -5,9 +5,9 @@
     <table class="table table-list">
         <thead>
             <tr>
-                <th class="left label" width="10%">Date</th>
-                <th class="left label" width="20%">Description</th>
-                <th class="right label" width="10%">Variation</th>
+                <th class="left label" width="16%">Date</th>
+                <th class="left label" width="70%">Description</th>
+                <th class="right label" width="14%">Variation</th>
             </tr>
         </thead>
         <tbody>
