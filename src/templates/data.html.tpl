@@ -5,11 +5,11 @@
     <div class="quote">Data</div>
     <div class="separator-horizontal"></div>
     <div class="lchart">
-    	<div class="data">
-    		{
-    		    "labels" : ["first", "second"]
-    		    "values" : [[1, 2], [4, 5], [6, 4], [4, 6]]
-    		}
-    	</div>
+        <div class="data">
+            {
+                "labels" : ["first", "second"]
+                "values" : [[1, 2], [4, 5], [6, 4], [4, 6]]
+            }
+        </div>
     </div>
 {% endblock %}

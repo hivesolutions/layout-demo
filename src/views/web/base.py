@@ -122,6 +122,13 @@ def data():
         link = "data"
     )
 
+@app.route("/table", methods = ("GET",))
+def table():
+    return flask.render_template(
+        "table.html.tpl",
+        link = "table"
+    )
+
 @app.route("/options", methods = ("GET",))
 def options():
     return flask.render_template(
