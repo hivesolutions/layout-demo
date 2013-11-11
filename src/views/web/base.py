@@ -115,6 +115,13 @@ def random():
         link = "random"
     )
 
+@app.route("/data", methods = ("GET",))
+def data():
+    return flask.render_template(
+        "data.html.tpl",
+        link = "data"
+    )
+
 @app.route("/options", methods = ("GET",))
 def options():
     return flask.render_template(

@@ -57,6 +57,13 @@
                                 <a href="{{ url_for('random') }}">random</a>
                             {% endif %}
                         </li>
+						<li>
+                            {% if link == "data" %}
+                                <a href="{{ url_for('data') }}" class="active">data</a>
+                            {% else %}
+                                <a href="{{ url_for('data') }}">data</a>
+                            {% endif %}
+                        </li>
                     </ul>
                 </div>
                 <span class="link-more">
