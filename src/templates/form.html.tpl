@@ -65,6 +65,12 @@
             </div>
         </div>
         <div class="label">
+            <label>Rating</label>
+        </div>
+        <div class="input">
+            <div class="rating" data-name="rate" data-count="5" data-value="2"></div>
+        </div>
+        <div class="label">
             <label>Description</label>
         </div>
         <div class="input">
