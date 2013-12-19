@@ -80,6 +80,7 @@ def form_action():
             "birthday" : ["Invalid birthday"],
             "place" : ["Invalid place"],
             "country" : ["Invalid country"],
+            "rating" : ["Invalid rating"],
             "description" : ["Invalid description"],
             "prices" : ["Invalid prices"]
         }

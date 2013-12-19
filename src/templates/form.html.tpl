@@ -68,7 +68,8 @@
             <label>Rating</label>
         </div>
         <div class="input">
-            <div class="rating" data-name="rate" data-count="5" data-value="2"></div>
+            <div class="rating" data-name="rating" data-count="5" data-value="{{ form.rating }}"
+                 data-error="{{ errors.rating }}"></div>
         </div>
         <div class="label">
             <label>Description</label>
