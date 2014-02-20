@@ -27,6 +27,12 @@
         </div>
     </div>
     <div class="input small">
+        <div class="button button-color button-green">green</div>
+        <div class="button button-color button-blue">blue</div>
+        <div class="button button-color button-red">red</div>
+        <div class="button button-color button-grey">grey</div>
+    </div>
+    <div class="input small">
         <div class="progress-bar"></div>
     </div>
 {% endblock %}
