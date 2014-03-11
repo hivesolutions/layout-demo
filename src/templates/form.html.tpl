@@ -34,6 +34,19 @@
             </div>
         </div>
         <div class="label">
+            <label>Related</label>
+        </div>
+        <div class="input">
+            <div name="related" class="tag-field" data-error="{{ errors.related }}">
+                <ul class="tags">
+                    {% for related in form.related %}
+                        <li>{{ related }}</li>
+                    {% endfor %}
+                </ul>
+                <ul class="data-source" data-type="countries"></ul>
+            </div>
+        </div>
+        <div class="label">
             <label>Gender</label>
         </div>
         <div class="input left">
