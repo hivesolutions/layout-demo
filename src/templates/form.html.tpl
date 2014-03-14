@@ -29,7 +29,8 @@
             <label>Country</label>
         </div>
         <div class="input">
-            <div name="country" class="drop-field drop-field-select" data-error="{{ errors.country }}">
+            <div name="country" class="drop-field drop-field-select" data-error="{{ errors.country }}"
+            	 data-number_options="-1">
                 <div class="data-source" data-type="countries"></div>
             </div>
         </div>
