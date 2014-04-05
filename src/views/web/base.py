@@ -144,18 +144,27 @@ def options():
 def options_action():
     type = quorum.get_field("type")
     theme = quorum.get_field("theme")
+    type_s = type.split("-", 1)
     theme_s = theme.split("-", 1)
+    type_l = len(type_s)
     theme_l = len(theme_s)
+
+    if type_l == 1: type_s.append("")
+    type_s, sub_type_s = type_s
 
     if theme_l == 1: theme_s.append("")
     theme_s, style_s = theme_s
 
+    type_s = type_s.lower().strip()
+    sub_type_s = sub_type_s.lower().strip()
     theme_s = theme_s.lower().strip()
     style_s = style_s.lower().strip()
 
     if style_s == "default": style_s = ""
 
-    flask.session["type"] = type
+    flask.session["type_label"] = type
+    flask.session["type"] = type_s
+    flask.session["sub_type"] = sub_type_s
     flask.session["label"] = theme
     flask.session["theme"] = theme_s
     flask.session["style"] = style_s
@@ -176,5 +185,5 @@ def about():
     )
 
 def render_template(base, type = None, *args, **kwargs):
-    type = flask.session.get("type", "static").lower()
+    type = flask.session.get("type", "static")
     return flask.render_template("%s/%s" % (type, base), *args, **kwargs)

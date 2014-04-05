@@ -7,11 +7,12 @@
             <label>Type</label>
         </div>
         <div class="input">
-            <div name="type" class="drop-field drop-field-select" value="{{ session.type }}"
+            <div name="type" class="drop-field drop-field-select" value="{{ session.type_label }}"
                  data-error="{{ errors.theme }}">
                 <ul class="data-source" data-type="local">
                     <li>Static</li>
                     <li>Fluid</li>
+                    <li>Fluid - Fixed</li>
                 </ul>
             </div>
         </div>
