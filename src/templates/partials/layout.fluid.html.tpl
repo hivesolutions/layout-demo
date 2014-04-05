@@ -12,19 +12,24 @@
         {% include "partials/bar.html.tpl" %}
         {% include "partials/header.html.tpl" %}
         {% block header %}
-            <ul class="side-links">
+            <div class="side-links">
                 {% if link == "home" %}
                     <a href="{{ url_for('index') }}" class="active">home</a>
                 {% else %}
                     <a href="{{ url_for('index') }}">home</a>
                 {% endif %}
-                <li class="separator"></li>
+                {% if link == "options" %}
+                    <a href="{{ url_for('options') }}" class="active">options</a>
+                {% else %}
+                    <a href="{{ url_for('options') }}">options</a>
+                {% endif %}
+                <div class="separator"></div>
                 {% if link == "about" %}
                     <a href="{{ url_for('about') }}" class="active">about</a>
                 {% else %}
                     <a href="{{ url_for('about') }}">about</a>
                 {% endif %}
-            </ul>
+            </div>
         {% endblock %}
     </div>
     <div id="content" class="content">
