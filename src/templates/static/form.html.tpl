@@ -1,4 +1,4 @@
-{% extends "partials/layout.html.tpl" %}
+{% extends "partials/layout.static.html.tpl" %}
 {% block title %}Form{% endblock %}
 {% block name %}Form{% endblock %}
 {% block content %}
@@ -30,7 +30,7 @@
         </div>
         <div class="input">
             <div name="country" class="drop-field drop-field-select" data-error="{{ errors.country }}"
-            	 data-number_options="-1">
+                 data-number_options="-1">
                 <div class="data-source" data-type="countries"></div>
             </div>
         </div>

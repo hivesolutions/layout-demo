@@ -1,4 +1,4 @@
-{% extends "partials/layout.html.tpl" %}
+{% extends "partials/layout.static.html.tpl" %}
 {% block title %}List{% endblock %}
 {% block name %}List{% endblock %}
 {% block content %}

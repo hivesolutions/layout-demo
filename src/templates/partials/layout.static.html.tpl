@@ -8,7 +8,8 @@
 </head>
 <body class="ux wait-load {{ session.style }}" >
     <div id="overlay" class="overlay"></div>
-    <div id="header">
+    <div id="header" class="header">
+        {% include "partials/header.html.tpl" %}
         {% block header %}
             <h1>{% block name %}{% endblock %}</h1>
             <div class="links">
@@ -80,7 +81,10 @@
             </div>
         {% endblock %}
     </div>
-    <div id="content">{% block content %}{% endblock %}</div>
-    {% include "partials/footer.html.tpl" %}
+    <div id="content" class="content">{% block content %}{% endblock %}</div>
+    <div id="footer" class="footer">
+        {% include "partials/footer.html.tpl" %}
+        {% block footer %}{% endblock %}
+    </div>
 </body>
 {% include "partials/end_doctype.html.tpl" %}

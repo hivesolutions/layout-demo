@@ -48,21 +48,21 @@ SLEEP_TIME = 3
 @app.route("/", methods = ("GET",))
 @app.route("/index", methods = ("GET",))
 def index():
-    return flask.render_template(
+    return render_template(
         "index.html.tpl",
         link = "home"
     )
 
 @app.route("/show", methods = ("GET",))
 def show():
-    return flask.render_template(
+    return render_template(
         "show.html.tpl",
         link = "show"
     )
 
 @app.route("/form", methods = ("GET",))
 def form():
-    return flask.render_template(
+    return render_template(
         "form.html.tpl",
         link = "form",
         form = {},
@@ -71,7 +71,7 @@ def form():
 
 @app.route("/form", methods = ("POST",))
 def form_action():
-    return flask.render_template(
+    return render_template(
         "form.html.tpl",
         link = "form",
         form = {},
@@ -89,7 +89,7 @@ def form_action():
 
 @app.route("/list", methods = ("GET",))
 def list():
-    return flask.render_template(
+    return render_template(
         "list.html.tpl",
         link = "list"
     )
@@ -112,28 +112,28 @@ def list_json():
 
 @app.route("/random", methods = ("GET",))
 def random():
-    return flask.render_template(
+    return render_template(
         "random.html.tpl",
         link = "random"
     )
 
 @app.route("/data", methods = ("GET",))
 def data():
-    return flask.render_template(
+    return render_template(
         "data.html.tpl",
         link = "data"
     )
 
 @app.route("/table", methods = ("GET",))
 def table():
-    return flask.render_template(
+    return render_template(
         "table.html.tpl",
         link = "table"
     )
 
 @app.route("/options", methods = ("GET",))
 def options():
-    return flask.render_template(
+    return render_template(
         "options.html.tpl",
         link = "options",
         form = {},
@@ -159,7 +159,7 @@ def options_action():
     flask.session["style"] = style_s
     flask.session.permanent = True
 
-    return flask.render_template(
+    return render_template(
         "options.html.tpl",
         link = "options",
         form = {},
@@ -168,7 +168,10 @@ def options_action():
 
 @app.route("/about", methods = ("GET",))
 def about():
-    return flask.render_template(
+    return render_template(
         "about.html.tpl",
         link = "about"
     )
+
+def render_template(base, type = "static", *args, **kwargs):
+    return flask.render_template("%s/%s" % (type, base), *args, **kwargs)

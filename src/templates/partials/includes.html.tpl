@@ -11,6 +11,8 @@
 {% else %}
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.css') }}" />
 {% endif %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.extras.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.data.css') }}" />
 <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'css/layout.css') }}" />
 
 <!-- favicon inclusion -->
