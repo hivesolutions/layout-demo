@@ -142,6 +142,7 @@ def options():
 
 @app.route("/options", methods = ("POST",))
 def options_action():
+    type = quorum.get_field("type")
     theme = quorum.get_field("theme")
     theme_s = theme.split("-", 1)
     theme_l = len(theme_s)
@@ -154,6 +155,7 @@ def options_action():
 
     if style_s == "default": style_s = ""
 
+    flask.session["type"] = type
     flask.session["label"] = theme
     flask.session["theme"] = theme_s
     flask.session["style"] = style_s
@@ -173,5 +175,6 @@ def about():
         link = "about"
     )
 
-def render_template(base, type = "static", *args, **kwargs):
+def render_template(base, type = None, *args, **kwargs):
+    type = flask.session.get("type", "static").lower()
     return flask.render_template("%s/%s" % (type, base), *args, **kwargs)
