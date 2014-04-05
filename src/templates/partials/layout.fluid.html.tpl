@@ -8,8 +8,10 @@
 </head>
 <body class="ux wait-load fluid fixed grey no-footer {{ session.style }}" >
     <div id="overlay" class="overlay"></div>
-    <div id="header" class="header">
+    <div id="bar" class="bar">
         {% include "partials/bar.html.tpl" %}
+    </div>
+    <div id="header" class="header">
         {% include "partials/header.html.tpl" %}
         {% block header %}
             <div class="side-links">
