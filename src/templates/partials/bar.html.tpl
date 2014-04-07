@@ -6,7 +6,7 @@
         <div class="drop-field entities" placeholder="Search over some of the items"
              data-number_options="4">
             <li class="template">
-                <img class="picture" data-src="https://amiranda.takethebill.com/static/images/dummy-avatar.png" />
+                <img class="picture" data-src="{{ url_for('static', filename = 'images/avatar_64.png') }}" />
                 <div>
                     <p class="title">%[name]</p>
                     <p class="description">%[details]</p>
@@ -14,46 +14,42 @@
             </li>
             <ul class="data-source" data-type="local">
                 <li>
-                    <span name="link">http://www.sapo.pt</span>
-                    <span name="name">Admin</span>
-                    <span name="details">admin@gmail.com</span>
+                    <span name="name">User 1</span>
+                    <span name="details">user1@hive.pt</span>
                 </li>
                 <li>
-                    <span name="link"></span>
-                    <span name="name">António</span>
-                    <span name="details">antonio@gmail.com</span>
+                    <span name="name">User 2</span>
+                    <span name="details">user2@hive.pt</span>
                 </li>
                 <li>
-                    <span name="link"></span>
-                    <span name="name">Arlindo</span>
-                    <span name="details">arlindo@gmail.com</span>
+                    <span name="name">User 3</span>
+                    <span name="details">user3@hive.pt</span>
                 </li>
                 <li>
-                    <span name="link"></span>
-                    <span name="name">Armando</span>
-                    <span name="details">armando@gmail.com</span>
+                    <span name="name">User 4</span>
+                    <span name="details">user4@hive.pt</span>
                 </li>
                 <li>
-                    <span name="name">Provider</span>
-                    <span name="details">provider@gmail.com</span>
+                    <span name="name">User 5</span>
+                    <span name="details">user5@hive.pt</span>
                 </li>
                 <li>
-                    <span name="name">User</span>
-                    <span name="details">user@gmail.com</span>
+                    <span name="name">User 6</span>
+                    <span name="details">user6@hive.pt</span>
                 </li>
             </ul>
         </div>
         <div class="right">
             <div class="menu system-menu">
                 <div class="menu-button">
-                    <a class="menu-link" data-no_left="1">João Magalhães</a>
+                    <a class="menu-link" data-no_left="1">User</a>
                 </div>
                 <div class="menu-contents">
                     <div class="header-contents">
-                        <img class="avatar-image" src="https://amiranda.takethebill.com/static/images/dummy-avatar.png" />
+                        <img class="avatar-image" src="{{ url_for('static', filename = 'images/avatar_64.png') }}" />
                         <div class="avatar-contents">
-                            <h2>João Magalhães</h2>
-                            <h3>joamag@gmail.com</h3>
+                            <h2>User</h2>
+                            <h3>user@hive.pt</h3>
                         </div>
                     </div>
                     <div class="footer-contents">
