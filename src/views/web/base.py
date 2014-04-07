@@ -144,6 +144,7 @@ def options():
 def options_action():
     type = quorum.get_field("type")
     theme = quorum.get_field("theme")
+    libs = quorum.get_field("libs")
     type_s = type.split("-", 1)
     theme_s = theme.split("-", 1)
     type_l = len(type_s)
@@ -159,6 +160,7 @@ def options_action():
     sub_type_s = sub_type_s.lower().strip()
     theme_s = theme_s.lower().strip()
     style_s = style_s.lower().strip()
+    libs_s = libs.lower().strip()
 
     if style_s == "default": style_s = ""
 
@@ -168,6 +170,8 @@ def options_action():
     flask.session["label"] = theme
     flask.session["theme"] = theme_s
     flask.session["style"] = style_s
+    flask.session["libs"] = libs_s
+    flask.session["libs_label"] = libs
     flask.session.permanent = True
 
     return render_template(

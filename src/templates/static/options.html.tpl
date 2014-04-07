@@ -30,6 +30,18 @@
                 </ul>
             </div>
         </div>
+        <div class="label">
+            <label>Libraries</label>
+        </div>
+        <div class="input">
+            <div name="libs" class="drop-field drop-field-select" value="{{ session.libs_label }}"
+                 data-error="{{ errors.theme }}">
+                <ul class="data-source" data-type="local">
+                    <li>Current</li>
+                    <li>Legacy</li>
+                </ul>
+            </div>
+        </div>
         <span class="button" data-submit="true">Submit Options</span>
     </form>
 {% endblock %}
