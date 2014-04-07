@@ -53,7 +53,7 @@
                         </div>
                     </div>
                     <div class="footer-contents">
-                        <a href="/signout">Logout</a>
+                        <a href="#">Logout</a>
                     </div>
                 </div>
             </div>
