@@ -81,7 +81,7 @@
             </div>
         {% endblock %}
     </div>
-    <div id="content" class="content">{% block content %}{% endblock %}</div>
+    <div id="content" class="content {% block style %}{% endblock %}">{% block content %}{% endblock %}</div>
     <div id="footer" class="footer">
         {% include "partials/footer.html.tpl" %}
         {% block footer %}{% endblock %}
