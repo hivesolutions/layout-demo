@@ -4,7 +4,7 @@
 {% block style %}no-header{% endblock %}
 {% block buttons %}
     {{ super() }}
-    <div class="button button-color button-grey" data-link="/accounts/own/edit">Edit</div>
+    <div class="button button-color button-grey" data-link="{{ url_for('form') }}">Edit</div>
 {% endblock %}
 {% block content %}
    <div class="show-panel">
