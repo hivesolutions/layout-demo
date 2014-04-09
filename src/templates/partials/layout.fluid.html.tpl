@@ -23,15 +23,15 @@
                 {% else %}
                     <a href="{{ url_for('index') }}">home</a>
                 {% endif %}
-                {% if link == "form" %}
-                    <a href="{{ url_for('form') }}" class="active">form</a>
-                {% else %}
-                    <a href="{{ url_for('form') }}">form</a>
-                {% endif %}
                 {% if link == "show" %}
                     <a href="{{ url_for('show') }}" class="active">show</a>
                 {% else %}
                     <a href="{{ url_for('show') }}">show</a>
+                {% endif %}
+                {% if link == "form" %}
+                    <a href="{{ url_for('form') }}" class="active">form</a>
+                {% else %}
+                    <a href="{{ url_for('form') }}">form</a>
                 {% endif %}
                 {% if link == "table" %}
                     <a href="{{ url_for('table') }}" class="active">table</a>
