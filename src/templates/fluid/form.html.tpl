@@ -2,7 +2,7 @@
 {% block title %}Form{% endblock %}
 {% block name %}Form{% endblock %}
 {% block content %}
-    <form action="/accounts/own/update" enctype="multipart/form-data" method="post" class="form inline">
+    <form action="{{ url_for('form') }}" enctype="multipart/form-data" method="post" class="form inline">
         <div class="section">
             <div class="item">
                 <div class="label">
@@ -134,7 +134,7 @@
         <div class="buttons">
             <span class="button button-color button-green" data-submit="true">Update</span>
             <span class="or">or</span>
-            <span class="button button-color button-grey" data-link="/accounts/own">Cancel</span>
+            <span class="button button-color button-grey" data-link="{{ url_for('show') }}">Cancel</span>
         </div>
     </form>
 {% endblock %}
