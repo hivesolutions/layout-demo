@@ -23,34 +23,57 @@
 // __copyright__ = Copyright (c) 2010-2012 Hive Solutions Lda.
 // __license__   = GNU General Public License (GPL), Version 3
 
+(function(jQuery) {
+    jQuery.fn.uapply = function(options) {
+        // sets the jquery matched object
+        var matchedObject = this;
+
+        // retrieves the reference to the complete set of progress
+        // bar elements and register them for the click event
+        var progressBar = jQuery(".progress-bar", matchedObject);
+        progressBar.click(function() {
+                    // retrieves the current element and sets the initial
+                    // percentage value to zero
+                    var element = jQuery(this);
+                    var percentage = 0;
+
+                    // creates an interaval for the update of the percentage
+                    // in the progress bar (using clojure)
+                    var interval = setInterval(function() {
+                                // increments the percentage value by one
+                                percentage += 1;
+
+                                // in case the percentage has overflow must cancel
+                                // the interval and return immediately
+                                if (percentage > 100) {
+                                    clearInterval(interval);
+                                    return;
+                                }
+
+                                // updates the progress bar value to the new percentage
+                                // value using a direct method call
+                                element.uxprogressbar("change", {
+                                            percentage : percentage
+                                        });
+                            }, 20);
+                });
+    };
+})(jQuery);
+
 jQuery(document).ready(function() {
-            // retrieves the reference to the complete set of progress
-            // bar elements and register them for the click event
-            var progressBar = jQuery(".progress-bar");
-            progressBar.click(function() {
-                        // retrieves the current element and sets the initial
-                        // percentage value to zero
-                        var element = jQuery(this);
-                        var percentage = 0;
+            // retrieves the reference to the top level
+            // body element to apply the components in it
+            var _body = jQuery("body");
 
-                        // creates an interaval for the update of the percentage
-                        // in the progress bar (using clojure)
-                        var interval = setInterval(function() {
-                                    // increments the percentage value by one
-                                    percentage += 1;
+            // applies the ui component to the body element (main
+            // element) and then applies the extra component logic
+            // from the composite extensions
+            _body.uapply();
 
-                                    // in case the percentage has overflow must cancel
-                                    // the interval and return immediately
-                                    if (percentage > 100) {
-                                        clearInterval(interval);
-                                        return;
-                                    }
-
-                                    // updates the progress bar value to the new percentage
-                                    // value using a direct method call
-                                    element.uxprogressbar("change", {
-                                                percentage : percentage
-                                            });
-                                }, 20);
+            // registers for the applied event on the body to be
+            // notified of new apply operations and react to them
+            // in the sense of applying the specifics
+            _body.bind("applied", function(event, base) {
+                        base.uapply();
                     });
         });
