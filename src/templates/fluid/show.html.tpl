@@ -7,7 +7,7 @@
     <div class="button button-color button-grey" data-link="{{ url_for('form') }}">Edit</div>
 {% endblock %}
 {% block content %}
-   <div class="show-panel">
+    <div class="show-panel">
         <div class="panel-header">
             <img class="image" src="{{ url_for('static', filename = 'images/avatar_96.png') }}" />
             <div class="details">
