@@ -1,5 +1,5 @@
 <!-- css inclusion -->
-<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/uxf/css/ux-min.css') }}" />
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/uxf/css/ux.css') }}" />
 {% if session.theme %}
     {% if session.theme == 'default' %}
         <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename = 'libs/layout/css/layout.css') }}" />
