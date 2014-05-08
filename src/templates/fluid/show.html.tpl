@@ -35,7 +35,7 @@
                     <dt>Gender</dt>
                     <dd class="capital">male</dd>
                 </div>
-                   <div class="separator"></div>
+                <div class="separator"></div>
                 <div class="item">
                     <dt>Email</dt>
                     <dd>root@root.com</dd>
