@@ -36,4 +36,5 @@ __license__ = "GNU General Public License (GPL), Version 3"
 
 from . import base
 
-from .base import *
+from .base import index, show, form, form_action, list, list_json, random, data,\
+    table, options, options_action, about, render_template
