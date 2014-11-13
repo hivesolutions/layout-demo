@@ -1,0 +1,3 @@
+[submodule "src/layout_demo/static/libs/uxf"]
+	path = src/layout_demo/static/libs/uxf
+	url = https://github.com/hivesolutions/uxf_bin.git
