@@ -39,9 +39,9 @@ __license__ = "GNU General Public License (GPL), Version 3"
 
 import time
 
-from layout_demo import app
-from layout_demo import flask
-from layout_demo import quorum
+from layout_demo.main import app
+from layout_demo.main import flask
+from layout_demo.main import quorum
 
 SLEEP_TIME = 3
 
