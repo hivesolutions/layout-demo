@@ -15,8 +15,8 @@
         {% include "partials/bar.html.tpl" %}
     </div>
     <div id="header" class="header">
-        {% include "partials/header.html.tpl" %}
         {% block header %}
+            {% include "partials/header.html.tpl" %}
             <div class="side-links">
                 {% if link == "home" %}
                     <a href="{{ url_for('index') }}" class="active">home</a>
@@ -66,8 +66,9 @@
         </div>
     </div>
     <div id="footer" class="footer">
-        {% include "partials/footer.html.tpl" %}
-        {% block footer %}{% endblock %}
+        {% block footer %}
+            {% include "partials/footer.html.tpl" %}
+        {% endblock %}
     </div>
 </body>
 {% include "partials/end_doctype.html.tpl" %}
