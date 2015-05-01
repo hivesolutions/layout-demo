@@ -68,12 +68,17 @@
                 </div>
                 <div class="option">
                     <span class="float-left">What about a motocycle for a run ?</span>
-                    <input class="float-right" type="checkbox" name="car" />
+                    <input class="float-right" type="checkbox" name="motocycle" />
                     <div class="clear"></div>
                 </div>
                 <div class="option">
                     <span class="float-left">Born In Passadena ?</span>
-                    <input class="float-right" type="checkbox" name="car" />
+                    <input class="float-right" type="checkbox" name="passadena" />
+                    <div class="clear"></div>
+                </div>
+                <div class="option">
+                    <span class="float-left">Do you love movies ?</span>
+                    <input class="float-right square" type="checkbox" name="movies" />
                     <div class="clear"></div>
                 </div>
             </div>
