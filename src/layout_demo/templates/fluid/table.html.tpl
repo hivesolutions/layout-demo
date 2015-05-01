@@ -16,28 +16,28 @@
                 <td class="text-left">
                     <a href="#">João Magalhães</a>
                 </td>
-                <td class="text-left">Próximos eventos música @ FNAC</td>
+                <td class="text-left">Next music events @ FNAC</td>
                 <td class="text-right timestamp" data-width="190">Porto</td>
             </tr>
             <tr class="table-row">
                 <td class="text-left">
-                    <a href="#">Gondomar</a>
+                    <a href="#">Tiago Magalhães</a>
                 </td>
-                <td class="text-left">Coisas pendentes para o oibiquini</td>
+                <td class="text-left">Pending things for the Oiôba website</td>
                 <td class="text-right timestamp" data-width="190">Porto</td>
             </tr>
             <tr class="table-row">
                 <td class="text-left">
-                    <a href="#">Gondomar</a>
+                    <a href="#">Tiago Magalhães</a>
                 </td>
-                <td class="text-left">Próximos eventos música @ FNAC</td>
+                <td class="text-left">Next dancing events @ FNAC</td>
                 <td class="text-right timestamp" data-width="190">Porto</td>
             </tr>
             <tr class="table-row">
                 <td class="text-left">
                     <a href="#">António Gouveia</a>
                 </td>
-                <td class="text-left">[Omni API] implementar o wrap_exception flag</td>
+                <td class="text-left">Implement the wrap_exception_flag method</td>
                 <td class="text-right timestamp" data-width="190">Porto</td>
             </tr>
         </tbody>
