@@ -27,7 +27,7 @@
                 <td class="right">down</td>
             </tr>
             <tr>
-                  <td class="left">2010/06/04</td>
+                <td class="left">2010/06/04</td>
                 <td class="left"><a href="#">Fourth Item</a></td>
                 <td class="right">up</td>
             </tr>

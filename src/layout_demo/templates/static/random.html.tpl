@@ -28,14 +28,20 @@
     </div>
     <div class="input small">
         <ul class="drop-down" data-name="Drop Down">
-            <li>Drop Option 1</li>
-            <li>Drop Option 2</li>
-            <li>Drop Option 3</li>
             <li>
-                <a href="#">Option 4</a>
+                <span>No Operation 1</span>
             </li>
             <li>
-                <a href="#">Option 5</a>
+                <span>No Operation 2</span>
+            </li>
+            <li>
+                <span>No Operation 3</span>
+            </li>
+            <li>
+                <a href="http://www.hive.pt">Hive Website</a>
+            </li>
+            <li>
+                <a href="{{ url_for('about') }}">About</a>
             </li>
         </ul>
     </div>
