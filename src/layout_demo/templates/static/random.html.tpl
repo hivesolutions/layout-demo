@@ -28,9 +28,9 @@
     </div>
     <div class="input small">
         <ul class="drop-down" data-name="Drop Down">
-            <li>Option 1</li>
-            <li>Option 2</li>
-            <li>Option 3</li>
+            <li>Drop Option 1</li>
+            <li>Drop Option 2</li>
+            <li>Drop Option 3</li>
             <li>
             	<a href="#">Option 4</a>
             </li>
