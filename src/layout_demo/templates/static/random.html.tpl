@@ -38,7 +38,7 @@
                 <span>No Operation 3</span>
             </li>
             <li>
-                <a href="http://www.hive.pt">Hive Website</a>
+                <a href="http://www.hive.pt" target="_blank">Hive Website</a>
             </li>
             <li>
                 <a href="{{ url_for('about') }}">About</a>
