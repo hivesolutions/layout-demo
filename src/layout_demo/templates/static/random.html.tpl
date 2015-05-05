@@ -44,6 +44,23 @@
                 <a href="{{ url_for('about') }}">About</a>
             </li>
         </ul>
+        <ul class="drop-down button-red" data-name="Drop Down">
+            <li>
+                <span>No Operation 1</span>
+            </li>
+            <li>
+                <span>No Operation 2</span>
+            </li>
+            <li>
+                <span>No Operation 3</span>
+            </li>
+            <li>
+                <a href="http://www.hive.pt" target="_blank">Hive Website</a>
+            </li>
+            <li>
+                <a href="{{ url_for('about') }}">About</a>
+            </li>
+        </ul>
     </div>
     <div class="input small">
         <div class="button button-color button-green">green</div>
