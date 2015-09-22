@@ -61,6 +61,20 @@
                 <a href="{{ url_for('about') }}">About</a>
             </li>
         </ul>
+        <ul class="drop-down button-green" data-name="Drop Input" data-input="drop">
+            <li data-value="value-1">
+            	<span>Value 1</span>
+            </li>
+            <li data-value="value-2">
+            	<span>Value 2</span>
+            </li>
+            <li data-value="value-3">
+            	<span>Value 3</span>
+            </li>
+            <li data-value="value-4">
+            	<span>Value 4</span>
+            </li>
+        </ul>
     </div>
     <div class="input small">
         <div class="button button-color">default</div>
