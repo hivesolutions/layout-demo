@@ -115,11 +115,11 @@
                     </td>
                     <td>
                         <input type="text" name="prices[][quantity]"
-                        	   class="text-field text-right" data-type="floatp" value="1" />
+                               class="text-field text-right" data-type="floatp" value="1" />
                     </td>
                     <td>
                         <input type="text" name="prices[][price]"
-                        	   class="text-field text-right" data-type="floatp" data-decimal_places="2" />
+                               class="text-field text-right" data-type="floatp" data-decimal_places="2" />
                     </td>
                 </tr>
             </tbody>

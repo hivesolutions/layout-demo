@@ -62,18 +62,18 @@
             </li>
         </ul>
         <ul class="drop-down button-green" data-name="Drop Input" data-input="drop">
-        	<input type="hidden" value="value-2" />
+            <input type="hidden" value="value-2" />
             <li data-value="value-1">
-            	<span>Value 1</span>
+                <span>Value 1</span>
             </li>
             <li data-value="value-2">
-            	<span>Value 2</span>
+                <span>Value 2</span>
             </li>
             <li data-value="value-3">
-            	<span>Value 3</span>
+                <span>Value 3</span>
             </li>
             <li data-value="value-4">
-            	<span>Value 4</span>
+                <span>Value 4</span>
             </li>
         </ul>
     </div>
