@@ -22,7 +22,8 @@
         </div>
         <div class="input">
             <div name="place" class="drop-field" data-error="{{ errors.place }}">
-                <div class="data-source" data-type="countries"></div>
+                <input type="hidden" class="hidden-field" />
+                <div class="data-source" data-type="isocountries" data-iso="iso2"></div>
             </div>
         </div>
         <div class="label">
