@@ -49,6 +49,26 @@
             </div>
         </div>
         <div class="label">
+            <label>Occupation</label>
+        </div>
+        <div>
+	        <ul class="drop-down" data-name="Select one" data-input="occupation"
+	        	data-error="{{ errors.occupation }}">
+                <li data-value="student">
+                    <span>Student</span>
+                </li>
+                <li data-value="software-developer">
+                    <span>Software Developer</span>
+                </li>
+                <li data-value="mechanical-engineer">
+                    <span>Mechanical Engineer</span>
+                </li>
+                <li data-value="doctor">
+                    <span>Doctor</span>
+                </li>
+            </ul>
+        </div>
+        <div class="label">
             <label>Gender</label>
         </div>
         <div class="input left">

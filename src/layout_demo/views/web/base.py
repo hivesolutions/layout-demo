@@ -81,6 +81,7 @@ def form_action():
             "place" : ["Invalid place"],
             "country" : ["Invalid country"],
             "related" : ["Invalid related"],
+            "occupation" : ["Invalid occupation"],
             "rating" : ["Invalid rating"],
             "description" : ["Invalid description"],
             "prices" : ["Invalid prices"]
