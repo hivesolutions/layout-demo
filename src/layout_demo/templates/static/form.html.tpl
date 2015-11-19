@@ -51,9 +51,9 @@
         <div class="label">
             <label>Occupation</label>
         </div>
-        <div>
-	        <ul class="drop-down" data-name="Select one" data-input="occupation"
-	        	data-error="{{ errors.occupation }}">
+        <div class="input">
+            <ul class="drop-down drop-down-form" data-name="Select one" data-input="occupation"
+                data-error="{{ errors.occupation }}">
                 <li data-value="student">
                     <span>Student</span>
                 </li>
