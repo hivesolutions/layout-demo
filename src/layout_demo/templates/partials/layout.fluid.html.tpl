@@ -6,7 +6,7 @@
         <title>Layout / {% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
-<body class="ux wait-load fluid grey no-footer {{ session.sub_type }} {{ session.style }}" >
+<body class="ux wait-load fluid grey no-footer {{ session.sub_type|default('', True) }} {{ session.style|default('', True) }}" >
     {% block extras %}
         {% include "partials/extras.html.tpl" %}
     {% endblock %}
