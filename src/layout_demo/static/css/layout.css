@@ -32,3 +32,16 @@
 .progress-bar {
     cursor: pointer;
 }
+
+.drop-down-container.drop-down-form {
+    width: 100%;
+}
+
+.button-drop-down.drop-down-form {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.drop-down.drop-down-form {
+    width: 100%;
+}
