@@ -37,11 +37,11 @@
     width: 100%;
 }
 
-.button-drop-down.drop-down-form {
-    box-sizing: border-box;
+.drop-down-container.drop-down-form > ul.drop-down.drop-down-form {
     width: 100%;
 }
 
-.drop-down.drop-down-form {
+.button.button-drop-down.drop-down-form {
+    box-sizing: border-box;
     width: 100%;
 }
