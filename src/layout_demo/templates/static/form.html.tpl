@@ -39,7 +39,7 @@
             <label>Related</label>
         </div>
         <div class="input">
-            <div name="related" class="tag-field" data-error="{{ errors.related }}">
+            <div name="related" class="tag-field" data-no_duplicates="1" data-error="{{ errors.related }}">
                 <ul class="tags">
                     {% for related in form.related %}
                         <li>{{ related }}</li>
