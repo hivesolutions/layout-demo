@@ -39,6 +39,8 @@
                 <ul class="data-source" data-type="local">
                     <li>Current</li>
                     <li>Legacy</li>
+                    <li>Next</li>
+                    <li>Edge</li>
                 </ul>
             </div>
         </div>
