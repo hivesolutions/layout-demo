@@ -76,7 +76,7 @@
                 <span>Value 4</span>
             </li>
         </ul>
-        <ul class="drop-down button-green" data-name="Drop Input" data-input="drop">
+        <ul class="drop-down drop-down-open button-green" data-name="Drop Input" data-input="drop">
             <input type="hidden" value="value-2" />
             <li data-value="value-1">
                 <span>Value 1</span>
