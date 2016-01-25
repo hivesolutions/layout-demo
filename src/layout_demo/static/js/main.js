@@ -32,37 +32,37 @@
         // bar elements and register them for the click event
         var progressBar = jQuery(".progress-bar", matchedObject);
         progressBar.click(function() {
-                    // retrieves the current element and sets the initial
-                    // percentage value to zero
-                    var element = jQuery(this);
-                    var percentage = 0;
+            // retrieves the current element and sets the initial
+            // percentage value to zero
+            var element = jQuery(this);
+            var percentage = 0;
 
-                    // creates an interaval for the update of the percentage
-                    // in the progress bar (using clojure)
-                    var interval = setInterval(function() {
-                                // increments the percentage value by one
-                                percentage += 1;
+            // creates an interaval for the update of the percentage
+            // in the progress bar (using clojure)
+            var interval = setInterval(function() {
+                // increments the percentage value by one
+                percentage += 1;
 
-                                // in case the percentage has overflow must cancel
-                                // the interval and return immediately
-                                if (percentage > 100) {
-                                    clearInterval(interval);
-                                    return;
-                                }
+                // in case the percentage has overflow must cancel
+                // the interval and return immediately
+                if (percentage > 100) {
+                    clearInterval(interval);
+                    return;
+                }
 
-                                // updates the progress bar value to the new percentage
-                                // value using a direct method call
-                                element.uxprogressbar("change", {
-                                            percentage : percentage
-                                        });
-                            }, 20);
+                // updates the progress bar value to the new percentage
+                // value using a direct method call
+                element.uxprogressbar("change", {
+                    percentage: percentage
                 });
+            }, 20);
+        });
     };
 })(jQuery);
 
 jQuery(document).ready(function() {
-            var _body = jQuery("body");
-            _body.bind("applied", function(event, base) {
-                        base.uapply();
-                    });
-        });
+    var _body = jQuery("body");
+    _body.bind("applied", function(event, base) {
+        base.uapply();
+    });
+});
