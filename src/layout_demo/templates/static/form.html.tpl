@@ -122,7 +122,7 @@
             <input name="prices[]" type="hidden" class="table-empty-field" />
             <thead>
                 <tr>
-                    <th class="longer-input" data-width="384">Country</th>
+                    <th class="longer-input" data-width="380">Country</th>
                     <th data-width="80">Qty</th>
                     <th data-width="80">Price</th>
                 </tr>
