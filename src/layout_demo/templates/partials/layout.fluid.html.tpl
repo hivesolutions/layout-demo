@@ -18,41 +18,39 @@
         {% block header %}
             {% include "partials/header.html.tpl" %}
             <div class="side-links">
-                <div class="side-links-container">
-                    {% if link == "home" %}
-                        <a href="{{ url_for('index') }}" class="active">home</a>
-                    {% else %}
-                        <a href="{{ url_for('index') }}">home</a>
-                    {% endif %}
-                    {% if link == "show" %}
-                        <a href="{{ url_for('show') }}" class="active">show</a>
-                    {% else %}
-                        <a href="{{ url_for('show') }}">show</a>
-                    {% endif %}
-                    {% if link == "form" %}
-                        <a href="{{ url_for('form') }}" class="active">form</a>
-                    {% else %}
-                        <a href="{{ url_for('form') }}">form</a>
-                    {% endif %}
-                    {% if link == "table" %}
-                        <a href="{{ url_for('table') }}" class="active">table</a>
-                    {% else %}
-                        <a href="{{ url_for('table') }}">table</a>
-                    {% endif %}
-                    <div class="separator"></div>
-                    {% if link == "options" %}
-                        <a href="{{ url_for('options') }}" class="active">options</a>
-                    {% else %}
-                        <a href="{{ url_for('options') }}">options</a>
-                    {% endif %}
-                    {% if link == "about" %}
-                        <a href="{{ url_for('about') }}" class="active">about</a>
-                    {% else %}
-                        <a href="{{ url_for('about') }}">about</a>
-                    {% endif %}
-                    <div class="separator"></div>
-                    <a class="button" data-show=".side-panel">side</a>
-                </div>
+                {% if link == "home" %}
+                    <a href="{{ url_for('index') }}" class="active">home</a>
+                {% else %}
+                    <a href="{{ url_for('index') }}">home</a>
+                {% endif %}
+                {% if link == "show" %}
+                    <a href="{{ url_for('show') }}" class="active">show</a>
+                {% else %}
+                    <a href="{{ url_for('show') }}">show</a>
+                {% endif %}
+                {% if link == "form" %}
+                    <a href="{{ url_for('form') }}" class="active">form</a>
+                {% else %}
+                    <a href="{{ url_for('form') }}">form</a>
+                {% endif %}
+                {% if link == "table" %}
+                    <a href="{{ url_for('table') }}" class="active">table</a>
+                {% else %}
+                    <a href="{{ url_for('table') }}">table</a>
+                {% endif %}
+                <div class="separator"></div>
+                {% if link == "options" %}
+                    <a href="{{ url_for('options') }}" class="active">options</a>
+                {% else %}
+                    <a href="{{ url_for('options') }}">options</a>
+                {% endif %}
+                {% if link == "about" %}
+                    <a href="{{ url_for('about') }}" class="active">about</a>
+                {% else %}
+                    <a href="{{ url_for('about') }}">about</a>
+                {% endif %}
+                <div class="separator"></div>
+                <a class="button" data-show=".side-panel">side</a>
             </div>
         {% endblock %}
     </div>
