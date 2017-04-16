@@ -6,7 +6,7 @@
         <title>Layout / {% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
-<body class="ux wait-load fluid grey no-footer {{ session.sub_type|default('', True) }} {{ session.style|default('', True) }}" >
+<body class="ux wait-load fluid grey no-footer {{ session.sub_type|default('', True) }} {{ session.theme|default('', True) }} {{ session.style|default('', True) }}" >
     {% block extras %}
         {% include "partials/extras.html.tpl" %}
     {% endblock %}
@@ -19,38 +19,38 @@
             {% include "partials/header.html.tpl" %}
             <div class="side-links">
                 {% if link == "home" %}
-                    <a href="{{ url_for('index') }}" class="active">home</a>
+                    <a href="{{ url_for('index') }}" class="active">Home</a>
                 {% else %}
-                    <a href="{{ url_for('index') }}">home</a>
+                    <a href="{{ url_for('index') }}">Home</a>
                 {% endif %}
                 {% if link == "show" %}
-                    <a href="{{ url_for('show') }}" class="active">show</a>
+                    <a href="{{ url_for('show') }}" class="active">Show</a>
                 {% else %}
-                    <a href="{{ url_for('show') }}">show</a>
+                    <a href="{{ url_for('show') }}">Show</a>
                 {% endif %}
                 {% if link == "form" %}
-                    <a href="{{ url_for('form') }}" class="active">form</a>
+                    <a href="{{ url_for('form') }}" class="active">Form</a>
                 {% else %}
-                    <a href="{{ url_for('form') }}">form</a>
+                    <a href="{{ url_for('form') }}">Form</a>
                 {% endif %}
                 {% if link == "table" %}
-                    <a href="{{ url_for('table') }}" class="active">table</a>
+                    <a href="{{ url_for('table') }}" class="active">Table</a>
                 {% else %}
-                    <a href="{{ url_for('table') }}">table</a>
+                    <a href="{{ url_for('table') }}">Table</a>
                 {% endif %}
                 <div class="separator"></div>
                 {% if link == "options" %}
-                    <a href="{{ url_for('options') }}" class="active">options</a>
+                    <a href="{{ url_for('options') }}" class="active">Options</a>
                 {% else %}
-                    <a href="{{ url_for('options') }}">options</a>
+                    <a href="{{ url_for('options') }}">Options</a>
                 {% endif %}
                 {% if link == "about" %}
-                    <a href="{{ url_for('about') }}" class="active">about</a>
+                    <a href="{{ url_for('about') }}" class="active">About</a>
                 {% else %}
-                    <a href="{{ url_for('about') }}">about</a>
+                    <a href="{{ url_for('about') }}">About</a>
                 {% endif %}
                 <div class="separator"></div>
-                <a class="button" data-show=".side-panel">side</a>
+                <a class="button" data-show=".side-panel">Side</a>
             </div>
         {% endblock %}
     </div>
