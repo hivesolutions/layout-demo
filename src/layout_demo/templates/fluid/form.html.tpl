@@ -113,6 +113,16 @@
                     </div>
                 </div>
             </div>
+            <div class="item">
+    	        <div class="label">
+			        <label>Related</label>
+			    </div>
+			    <div class="input">
+			        <div name="related" class="tag-field" data-no_duplicates="1" data-auto_width="1" data-error="">
+			            <ul class="data-source" data-type="countries"></ul>
+			        </div>
+			    </div>
+            </div>
         </div>
         <div class="separator strong"></div>
         <div class="section">
