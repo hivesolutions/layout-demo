@@ -12,6 +12,7 @@
             <img class="image" src="{{ url_for('static', filename = 'images/avatar_96.png') }}" />
             <div class="details">
                 <h2>João Magalhães</h2>
+                <h3>root@root.com</h3>
             </div>
             <div class="buttons">
                 {{ self.buttons() }}
