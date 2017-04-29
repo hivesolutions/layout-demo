@@ -3,6 +3,7 @@
     {% block head %}
         {% include "partials/content_type.html.tpl" %}
         {% include "partials/includes.html.tpl" %}
+        {% include "partials/meta.html.tpl" %}
         <title>Layout / {% block title %}{% endblock %}</title>
     {% endblock %}
 </head>
