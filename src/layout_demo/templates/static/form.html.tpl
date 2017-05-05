@@ -1,6 +1,7 @@
 {% extends "partials/layout.static.html.tpl" %}
 {% block title %}Form{% endblock %}
 {% block name %}Form{% endblock %}
+{% block style %}border-box{% endblock %}
 {% block content %}
     <form action="{{ url_for('form_action') }}" method="post" class="form">
         <div class="label">
@@ -122,7 +123,7 @@
             <input name="prices[]" type="hidden" class="table-empty-field" />
             <thead>
                 <tr>
-                    <th class="longer-input" data-width="380">Country</th>
+                    <th class="longer-input">Country</th>
                     <th data-width="80">Qty</th>
                     <th data-width="80">Price</th>
                 </tr>
