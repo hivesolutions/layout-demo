@@ -82,7 +82,7 @@
             </div>
         {% endblock %}
     </div>
-    <div id="content" class="content {% block style %}{% endblock %}">{% block content %}{% endblock %}</div>
+    <div id="content" class="content {% block style %}border-box{% endblock %}">{% block content %}{% endblock %}</div>
     <div id="footer" class="footer">
         {% block footer %}
             {% include "partials/footer.html.tpl" %}

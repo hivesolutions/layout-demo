@@ -7,7 +7,7 @@
             <label>Name</label>
         </div>
         <div class="input">
-            <input name="name" class="text-field focus" placeholder="eg: John Doe" value="{{ form.name }}"
+            <input name="name" type="text" class="text-field focus" placeholder="eg: John Doe" value="{{ form.name }}"
                    data-error="{{ errors.name }}" />
         </div>
         <div class="label">
