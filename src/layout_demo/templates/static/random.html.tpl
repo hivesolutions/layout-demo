@@ -1,6 +1,7 @@
 {% extends "partials/layout.static.html.tpl" %}
 {% block title %}Random{% endblock %}
 {% block name %}Random{% endblock %}
+{% block style %}border-box{% endblock %}
 {% block content %}
     <div class="quote">Random</div>
     <div class="separator-horizontal"></div>
