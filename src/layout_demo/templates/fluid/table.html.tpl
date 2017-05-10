@@ -9,7 +9,7 @@
                 <dl>
                     <div class="item">
                         <dt>Sender</dt>
-                        <dd>João Magalhães</dd>
+                        <dd><a href="#">João Magalhães</a></dd>
                         <dt>Subject</dt>
                         <dd>Next music events @ FNAC</dd>
                         <dt>Last Login</dt>
@@ -17,7 +17,7 @@
                     </div>
                     <div class="item">
                         <dt>Sender</dt>
-                        <dd>Tiago Magalhães</dd>
+                        <dd><a href="#">Tiago Magalhães</a></dd>
                         <dt>Subject</dt>
                         <dd>Pending things for the Oiôba website</dd>
                         <dt>Last Login</dt>
@@ -25,7 +25,7 @@
                     </div>
                     <div class="item">
                         <dt>Sender</dt>
-                        <dd>Tiago Magalhães</dd>
+                        <dd><a href="#">Tiago Magalhães</a></dd>
                         <dt>Subject</dt>
                         <dd>Next dancing events @ FNAC</dd>
                         <dt>Last Login</dt>
@@ -33,7 +33,7 @@
                     </div>
                     <div class="item">
                         <dt>Sender</dt>
-                        <dd>António Gouveia</dd>
+                        <dd><a href="#">António Gouveia</a></dd>
                         <dt>Subject</dt>
                         <dd>Implement the wrap_exception_flag method</dd>
                         <dt>Last Login</dt>
