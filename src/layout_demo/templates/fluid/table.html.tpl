@@ -10,32 +10,60 @@
                     <div class="item">
                         <dt>Sender</dt>
                         <dd><a href="#">João Magalhães</a></dd>
+                    </div>
+                    <div class="item">
                         <dt>Subject</dt>
                         <dd>Next music events @ FNAC</dd>
+                    </div>
+                    <div class="item">
                         <dt>Last Login</dt>
                         <dd>Porto</dd>
                     </div>
+                </dl>
+            </div>
+            <div class="card">
+                <dl>
                     <div class="item">
                         <dt>Sender</dt>
                         <dd><a href="#">Tiago Magalhães</a></dd>
+                    </div>
+                    <div class="item">
                         <dt>Subject</dt>
                         <dd>Pending things for the Oiôba website</dd>
+                    </div>
+                    <div class="item">
                         <dt>Last Login</dt>
                         <dd>Porto</dd>
                     </div>
+                </dl>
+            </div>
+            <div class="card">
+                <dl>
                     <div class="item">
                         <dt>Sender</dt>
                         <dd><a href="#">Tiago Magalhães</a></dd>
+                    </div>
+                    <div class="item">
                         <dt>Subject</dt>
                         <dd>Next dancing events @ FNAC</dd>
+                    </div>
+                    <div class="item">
                         <dt>Last Login</dt>
                         <dd>Porto</dd>
                     </div>
+                </dl>
+            </div>
+            <div class="card">
+                <dl>
                     <div class="item">
                         <dt>Sender</dt>
                         <dd><a href="#">António Gouveia</a></dd>
+                    </div>
+                    <div class="item">
                         <dt>Subject</dt>
                         <dd>Implement the wrap_exception_flag method</dd>
+                    </div>
+                    <div class="item">
                         <dt>Last Login</dt>
                         <dd>Porto</dd>
                     </div>
