@@ -51,7 +51,7 @@
                     <a href="{{ url_for('about') }}">About</a>
                 {% endif %}
                 <div class="separator"></div>
-                <a class="button" data-show=".side-panel">Side</a>
+                <a class="button button-no-style" data-show=".side-panel">Side</a>
             </div>
         {% endblock %}
     </div>
