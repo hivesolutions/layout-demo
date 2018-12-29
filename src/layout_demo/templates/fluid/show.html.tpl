@@ -10,12 +10,12 @@
     <div class="show-panel">
         <div class="panel-header">
             <img class="image" src="{{ url_for('static', filename = 'images/avatar_96.png') }}" />
+            <div class="buttons">
+                {{ self.buttons() }}
+            </div>
             <div class="details">
                 <h2>João Magalhães</h2>
                 <h3>root@root.com</h3>
-            </div>
-            <div class="buttons">
-                {{ self.buttons() }}
             </div>
         </div>
         <div class="panel-contents">
